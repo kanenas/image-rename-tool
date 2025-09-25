@@ -1,4 +1,15 @@
 <?php
+/**
+ * Image File Renamer Tool
+ * ------------------
+ * - Renames images like "000028 (1).jpg" → "000028-1.jpg"
+ * - Handles jpg/jpeg/png (case insensitive)
+ * - Dry Run option to preview changes
+ * - Minimal UI with progress + log file
+ * - Logs skipped files as well
+ * - Safe for large batches
+ */
+
 set_time_limit(0); // Prevent timeouts for large directories
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
